@@ -1,0 +1,9 @@
+Hi Arul,
+
+in import statement getting error "The import org.openqa.selenium.TakesScreenshot conflicts with a type defined in the same file"
+
+able to import TakesScreenshot interface like the below format only
+		org.openqa.selenium.TakesScreenshot shot= (org.openqa.selenium.TakesScreenshot) driver;
+		File source = shot.getScreenshotAs(OutputType.FILE);
+
+Unable to upload the image as uploads are disabled
