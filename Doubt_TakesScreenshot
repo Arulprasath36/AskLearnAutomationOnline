@@ -1,0 +1,10 @@
+Hi Arul,
+
+Getting error saying The method getScreenshotAs(OutputType<File>) is undefined for the type TakesScreenshot
+	WebDriver driver = new ChromeDriver();
+		driver.get("http://google.com");
+		TakesScreenshot screenshot=(TakesScreenshot)driver;
+		File source=screenshot.getScreenshotAs(OutputType.FILE);
+		driver.close();
+
+Unable to upload the image as uploads are disabled
