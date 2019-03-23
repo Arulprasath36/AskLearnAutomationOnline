@@ -1,10 +1,12 @@
 Hi Arul,
 
 Getting error saying The method getScreenshotAs(OutputType<File>) is undefined for the type TakesScreenshot
-	WebDriver driver = new ChromeDriver();
+in import statement getting error "The import org.openqa.selenium.TakesScreenshot conflicts with a type defined in the same file"
+
+		WebDriver driver = new ChromeDriver();
 		driver.get("http://google.com");
-		TakesScreenshot screenshot=(TakesScreenshot)driver;
-		File source=screenshot.getScreenshotAs(OutputType.FILE);
+		TakesScreenshot screenshot=(TakesScreenshot)driver; //compilation error not shown here
+		File source=screenshot.getScreenshotAs(OutputType.FILE);  //compilation error shown here
 		driver.close();
 
 Unable to upload the image as uploads are disabled
